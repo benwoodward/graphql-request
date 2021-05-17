@@ -38,6 +38,7 @@
     "dev:test": "jest --watch",
     "format": "prettier --write .",
     "prepublishOnly": "yarn build",
+    "prepare": "yarn build",
     "build": "rm -rf dist && tsc -d && tsc -p tsconfig.esm.json",
     "test": "jest",
     "release:stable": "dripip stable",
